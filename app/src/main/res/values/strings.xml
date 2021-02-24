@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">SC_ANDROID_SAMPLE</string>
+    <string name="title_activity_main">MainActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">Launcher Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="launch_mirrar">Launch mirrAR</string>
+</resources>
