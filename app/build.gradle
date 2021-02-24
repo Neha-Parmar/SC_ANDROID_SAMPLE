@@ -7,7 +7,9 @@ android {
 
     defaultConfig {
         applicationId "com.spacecode.sampleapp"
-        minSdkVersion 21
+        minSdkVersion 19
+//        MirrAr sdk requires min sdk version to be 21, while JewelTrace supports 19
+//        minSdkVersion 21
         targetSdkVersion 28
         versionCode 1
         versionName "1.0"
@@ -52,6 +54,6 @@ dependencies {
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
     androidTestImplementation 'androidx.test.espresso:espresso-intents:3.1.0'
 
-    implementation project(':library-release')
+    implementation project(':app-release')
 
 }
