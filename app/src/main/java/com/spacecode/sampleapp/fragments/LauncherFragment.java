@@ -8,7 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
-import com.sdm.mirrar.mirrar.MirrarFragment;
+import com.sdm.mirrar.library.MirrarFragment;
 import com.spacecode.sampleapp.R;
 
 import org.json.JSONException;
@@ -50,8 +50,8 @@ public class LauncherFragment extends BaseFragment {
             @Override
             public void onClick(View view) {
                 try {
-                    JSONObject data = new JSONObject("{\"options\":{\"productData\":{\"Earrings\":{\"items\":[\"500005DMAABA04\",\"20KE10\",\"20KE11\",\"500005SFAABA02\",\"500005SFAABA09\"],\"type\":\"ear\"},\"Mangalsutras\":{\"items\":[\"502118YEEAAA32\",\"502118YENAAA32\",\"502118YEOAAA32\"],\"type\":\"neck\"},\"NecklaceSets\":{\"items\":[\"5027182ADABA02\",\"5027182AJABA02\",\"5027182AKABA02\"],\"type\":\"set\"},\"Necklaces\":{\"items\":[\"502516NFEAAB32_N\",\"CH11\",\"CH12\",\"5027182ADABA02_N\",\"5027182AJABA02_N\"],\"type\":\"neck\"},\"PendantSets\":{\"items\":[\"5031181DXAAA09\",\"5132181BUABA00\",\"5132181BWABA00\"],\"type\":\"set\"},\"Pendants\":{\"items\":[\"500005PFAAAA09\",\"500005PFAAAB22\",\"500006PEAAAA09\"],\"type\":\"neck\"}}}}");
-                    fragment = new MirrarFragment("jewel-trace", "2555", data);
+                    JSONObject data = new JSONObject("{\"options\":{\"productData\":{\"Earrings\":{\"items\":[\"Earring2\",\"Earring3\"],\"type\":\"ear\"},\"Necklaces\":{\"items\":[\"Necklace1\",\"Necklace4\"],\"type\":\"neck\"},\"Rings\":{\"items\":[\"Ring2\",\"Ring4\"],\"type\":\"finger\"},\"Bracelets\":{\"items\":[\"Bracelet3\",\"Bracelet2\"],\"type\":\"wrist\"}}}}");
+                    fragment = new MirrarFragment(data, "jewel-trace", "2555");
 
                     FragmentTransaction transaction = getChildFragmentManager().beginTransaction();
 
